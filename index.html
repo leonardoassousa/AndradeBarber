@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrade Barbearia — Corte que impõe respeito</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap">
+    <a href="#top"><img class="logo-img" src="logo-cropped.png" alt="Andrade Barbearia"></a>
+    <nav class="links" aria-label="Navegação principal">
+      <a href="#servicos" data-nav>Serviços</a>
+      <a href="#galeria" data-nav>Galeria</a>
+      <a href="#avaliacoes" data-nav>Avaliações</a>
+      <a href="#faq" data-nav>Dúvidas</a>
+      <a href="#local" data-nav>Localização</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#local" class="btn btn-primary nav-cta">Agendar horário</a>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close" id="closeMenu" aria-label="Fechar menu">✕</button>
+  <a href="#servicos">Serviços</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#faq">Dúvidas</a>
+  <a href="#local">Localização</a>
+  <a href="#local" class="btn btn-primary">Agendar horário</a>
+</div>
+
+<section class="hero" id="top">
+  <div class="diag-bg"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="status-pill" id="statusPill">
+        <span class="status-dot" id="statusDot"></span> <span id="statusText">Verificando horário…</span>
+      </div>
+      <h1 class="reveal in">Corte que<br>impõe <span>respeito.</span></h1>
+      <p class="sub reveal in">Tradição de barbearia com o rigor de quem trata cada detalhe como decisão de campeonato. Cadeira, navalha e conversa boa — do jeito Andrade.</p>
+      <div class="hero-cta reveal in">
+        <a href="#local" class="btn btn-primary">Marcar horário</a>
+        <a href="https://www.google.com/search?q=Andrade+Barbearia#lrd=REPLACE_COM_SEU_LINK_DE_AVALIACAO" target="_blank" class="btn btn-outline">Avaliar no Google</a>
+      </div>
+    </div>
+    <div class="hero-media reveal in">
+      <div class="frame"><img src="foto-cafe.jpg" alt="Acabamento de barba na Andrade Barbearia"></div>
+      <div class="hero-badge"><span class="n">4.9</span><span class="l">★ Google avaliações</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat reveal"><span class="num" data-count="9">0</span><span class="lbl">Anos de tradição</span></div>
+    <div class="stat reveal"><span class="num" data-count="3200">0</span><span class="lbl">Cortes realizados</span></div>
+    <div class="stat reveal"><span class="num" data-count="4" data-decimal="9">0</span><span class="lbl">Nota no Google</span></div>
+    <div class="stat reveal"><span class="num" data-count="98">0</span><span class="lbl">% de retorno</span></div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Serviços</h2>
+      <p>Cada cadeira é tratada como um compromisso — do corte clássico ao acabamento de barba na navalha.</p>
+    </div>
+    <div class="services-grid">
+      <div class="card reveal">
+        <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.5 15.5M20 20L8.5 8.5"/></svg>
+        <h3>Corte tradicional</h3><p>Tesoura e máquina, no estilo que você escolher, com acabamento na régua.</p><span class="price">R$ 45</span>
+      </div>
+      <div class="card reveal">
+        <svg viewBox="0 0 24 24"><path d="M4 12c0-4 3-8 8-8s8 4 8 8-3 8-8 8-8-4-8-8z"/><path d="M9 12h6M12 9v6"/></svg>
+        <h3>Barba na navalha</h3><p>Toalha quente, navalha afiada e o acabamento que muda o rosto.</p><span class="price">R$ 35</span>
+      </div>
+      <div class="card reveal">
+        <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 9h16M9 9v11"/></svg>
+        <h3>Combo corte + barba</h3><p>O pacote completo pra sair pronto pra qualquer compromisso.</p><span class="price">R$ 70</span>
+      </div>
+      <div class="card reveal">
+        <svg viewBox="0 0 24 24"><path d="M12 4v16M6 8l6-4 6 4M6 16l6 4 6-4"/></svg>
+        <h3>Kids</h3><p>Corte para os pequenos, com paciência e capa personalizada.</p><span class="price">R$ 35</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="processo" style="padding-top:0;">
+  <div class="wrap">
+    <div class="process">
+      <div class="step reveal"><span class="num">01</span><h4>Escolha o serviço</h4><p>Fale com a gente pelo WhatsApp ou chegue direto na barbearia.</p></div>
+      <div class="step reveal"><span class="num">02</span><h4>Sente na cadeira</h4><p>Sem enrolação: seu horário é respeitado do começo ao fim.</p></div>
+      <div class="step reveal"><span class="num">03</span><h4>Saia renovado</h4><p>Corte fechado, barba alinhada e autoestima lá em cima.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Por dentro</span>
+      <h2>A barbearia</h2>
+      <p>Ambiente que respira futebol, música e boa conversa — do jeito que barbearia de verdade tem que ser. Clique numa foto pra ampliar.</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal" data-lightbox="foto-pai-filho.png">
+        <img src="foto-pai-filho.png" alt="Cliente com filho na cadeira da barbearia Andrade">
+        <figcaption><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>De pai pra filho, todo mundo passa pela Andrade</figcaption>
+      </figure>
+      <figure class="reveal" data-lightbox="foto-barba.png">
+        <img src="foto-barba.png" alt="Acabamento de barba com máquina de precisão">
+        <figcaption><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Acabamento na régua, sem pressa</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="close" id="lightboxClose" aria-label="Fechar">✕</button>
+  <img id="lightboxImg" src="" alt="Foto ampliada da barbearia Andrade">
+</div>
+
+<section id="avaliacoes" class="review">
+  <div class="wrap">
+    <div class="review-text reveal">
+      <div class="stars">
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+        <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg>
+      </div>
+      <h2>Já cortou com a gente?</h2>
+      <p>Sua avaliação ajuda a barbearia a crescer e mostra pra mais gente o trabalho que a gente entrega todo dia.</p>
+    </div>
+    <a href="https://www.google.com/search?q=Andrade+Barbearia#lrd=REPLACE_COM_SEU_LINK_DE_AVALIACAO" target="_blank" class="btn btn-primary reveal">Avaliar no Google</a>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:40px;">
+      <span class="eyebrow">Quem já veio</span>
+      <h2>O que dizem de nós</h2>
+    </div>
+    <div class="carousel reveal">
+      <div class="carousel-track-wrap">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="testi">
+            <div class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg></div>
+            <p>"Levei meu filho pequeno e o pessoal teve toda paciência do mundo. Saiu um corte impecável."</p>
+            <div class="who">Exemplo de avaliação</div>
+          </div>
+          <div class="testi">
+            <div class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg></div>
+            <p>"Ambiente top, atendimento rápido e o combo corte + barba vale muito a pena."</p>
+            <div class="who">Exemplo de avaliação</div>
+          </div>
+          <div class="testi">
+            <div class="stars"><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6z"/></svg></div>
+            <p>"Sou cliente antigo, nunca decepcionou. Recomendo de olhos fechados."</p>
+            <div class="who">Exemplo de avaliação</div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-arrow" id="prevBtn" aria-label="Anterior">←</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-arrow" id="nextBtn" aria-label="Próximo">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin:0 auto 50px;text-align:center;">
+      <span class="eyebrow" style="justify-content:center;">Dúvidas comuns</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-q">Preciso agendar horário? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Recomendamos agendar pelo WhatsApp pra garantir seu horário certo, mas também atendemos por ordem de chegada.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Vocês aceitam cartão e Pix? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Sim, aceitamos dinheiro, cartão de débito, crédito e Pix.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Atendem crianças? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Atendemos sim, com toda paciência e capinha personalizada para os pequenos.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Tem estacionamento perto? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Sim, há vagas próximas ao estabelecimento. Confira a localização exata no mapa abaixo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="local">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Onde estamos</span>
+      <h2>Horário &amp; localização</h2>
+      <p>Passe quando quiser ou garanta seu horário com antecedência pelo WhatsApp.</p>
+    </div>
+    <div class="hl">
+      <div class="hours-card reveal">
+        <div class="open-status" id="openStatusCard"><span class="status-dot" id="statusDot2"></span><span id="statusText2">Verificando horário…</span></div>
+        <div class="hours-row" data-day="1"><span>Segunda</span><span>09h – 20h</span></div>
+        <div class="hours-row" data-day="2"><span>Terça</span><span>09h – 20h</span></div>
+        <div class="hours-row" data-day="3"><span>Quarta</span><span>09h – 20h</span></div>
+        <div class="hours-row" data-day="4"><span>Quinta</span><span>09h – 20h</span></div>
+        <div class="hours-row" data-day="5"><span>Sexta</span><span>09h – 20h</span></div>
+        <div class="hours-row" data-day="6"><span>Sábado</span><span>09h – 18h</span></div>
+        <div class="hours-row" data-day="0"><span>Domingo</span><span>Fechado</span></div>
+        <div class="addr" style="margin-top:26px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <p><strong>Endereço</strong>Insira aqui o endereço completo da barbearia (rua, número, bairro, cidade).</p>
+        </div>
+        <a href="#" class="btn btn-primary" style="margin-top:24px;width:100%;justify-content:center;">Chamar no WhatsApp</a>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe src="https://www.google.com/maps?q=barbearia&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="reveal">Bora marcar seu <span>horário?</span></h2>
+    <p class="reveal">A cadeira tá esperando. Chega na Andrade e sai diferente.</p>
+    <div class="hero-cta reveal">
+      <a href="#" class="btn btn-primary">Chamar no WhatsApp</a>
+      <a href="https://www.google.com/search?q=Andrade+Barbearia#lrd=REPLACE_COM_SEU_LINK_DE_AVALIACAO" target="_blank" class="btn btn-outline">Avaliar no Google</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img class="logo-img" src="logo-cropped.png" alt="Andrade Barbearia">
+    <span class="fine">© 2026 Andrade Barbearia. Todos os direitos reservados.</span>
+    <div class="socials">
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
