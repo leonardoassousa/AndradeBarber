@@ -1,8 +1,12 @@
+document.querySelectorAll('img').forEach((image) => {
+  image.draggable = false;
+  image.addEventListener('dragstart', (event) => event.preventDefault());
+});
 /* ---------- header on scroll + active nav ---------- */
   const header = document.getElementById('siteHeader');
   const navLinks = document.querySelectorAll('[data-nav]');
   const sections = document.querySelectorAll('section[id]');
-  window.addEventListener('scroll', () => {
+  function updateHeader(){
     header.classList.toggle('scrolled', window.scrollY > 40);
     let current = '';
     sections.forEach(sec => {
@@ -10,7 +14,9 @@
       if(window.scrollY >= top) current = sec.getAttribute('id');
     });
     navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
-  });
+  }
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, {passive:true});
 
   /* ---------- mobile menu ---------- */
   const burger = document.getElementById('burgerBtn');
@@ -38,8 +44,8 @@
       if(entry.isIntersecting){
         const el = entry.target;
         const target = parseFloat(el.dataset.count);
-        const decimal = el.dataset.decimal ? parseInt(el.dataset.decimal) : 0;
-        const fullTarget = decimal ? parseFloat(target + '.' + decimal) : target;
+        const decimal = el.dataset.decimal ? parseInt(el.dataset.decimal, 10) : 0;
+        const fullTarget = target;
         const duration = 1400;
         const startTime = performance.now();
         function tick(now){
