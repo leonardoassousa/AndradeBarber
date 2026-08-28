@@ -37,6 +37,9 @@ document.querySelectorAll('img').forEach((image) => {
   }, {threshold:.15});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+  const googleRating = document.getElementById('googleRating');
+  if(googleRating) googleRating.textContent = '5.0';
+
   /* ---------- animated counters ---------- */
   const counters = document.querySelectorAll('.num[data-count]');
   const countIO = new IntersectionObserver((entries) => {
